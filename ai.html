@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Riddle Generator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f1ea;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #5a3e2b;
+            margin-bottom: 20px;
+        }
+
+        #riddle-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 60%;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        #riddle-box:hover {
+            transform: scale(1.02);
+        }
+
+        button {
+            background: #8b5e34;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #704a29;
+        }
+
+        #answer {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #3e2a1f;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+     
+
+    <h1>AI‑Powered Riddle Generator</h1>
+    <p>Click the button to get a random riddle. Try to guess before revealing the answer!</p>
+
+    <div id="riddle-box">
+        <p id="riddle">Press the button to get a riddle!</p>
+        <p id="answer"></p>
+    </div>
+
+    <button onclick="generateRiddle()">New Riddle</button>
+    <button onclick="showAnswer()">Show Answer</button>
+
+    <script>
+        const riddles = [
+            {
+                q: "What has to be broken before you can use it?",
+                a: "An egg."
+            },
+            {
+                q: "I speak without a mouth and hear without ears. What am I?",
+                a: "An echo."
+            },
+            {
+                q: "What has hands but can’t clap?",
+                a: "A clock."
+            },
+            {
+                q: "What gets wetter the more it dries?",
+                a: "A towel."
+            },
+            {
+                q: "What has a face and two hands but no arms or legs?",
+                a: "A clock."
+            }
+        ];
+
+        function generateRiddle() {
+            const random = riddles[Math.floor(Math.random() * riddles.length)];
+            document.getElementById("riddle").textContent = random.q;
+            document.getElementById("answer").textContent = random.a;
+            document.getElementById("answer").style.display = "none";
+        }
+
+        function showAnswer() {
+            document.getElementById("answer").style.display = "block";
+        }
+    </script>
+<p style="text-align:center; margin-top:20px;">
+    <a href="index.html"
+       style="background:#8b5e34; color:white; padding:10px 20px; border-radius:8px; text-decoration:none;">
+       Back to Professional Pages
+    </a>
+</p>
+</body>
+</html>

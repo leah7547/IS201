@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leah’s Pottery Page</title>
+    <link rel="stylesheet" href="css/pottery.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Back to Professional Pages</a>
+        <a href="#history">Go to Pottery History</a>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to the World of Pottery</h1>
+        <p>Clay • Fire • Art • Tradition</p>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="content">
+
+        <!-- Section 1 -->
+        <div class="section" id="history">
+            <h2>The History of Pottery</h2>
+            <p>Pottery is one of the oldest human art forms, dating back over 20,000 years. 
+               From functional vessels to intricate sculptures, pottery reflects culture, creativity, and craftsmanship.</p>
+
+            <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa" 
+                 alt="Pottery Wheel" class="pottery-img">
+
+            <h3>Types of Pottery</h3>
+
+            <!-- Ordered list with embedded unordered list -->
+            <ol>
+                <li>Handbuilding Techniques
+                    <ul>
+                        <li>Pinch Pots</li>
+                        <li>Coil Building</li>
+                        <li>Slab Construction</li>
+                    </ul>
+                </li>
+                <li>Wheel Throwing
+                    <ul>
+                        <li>Centering</li>
+                        <li>Pulling Walls</li>
+                        <li>Shaping Forms</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <h2>Watch Pottery in Action</h2>
+            <p>This video shows the mesmerizing process of throwing clay on a wheel.</p>
+
+            <!-- Embedded YouTube Video -->
+            <div class="video-container">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/-YCGK33c0xs" 
+                        title="YouTube video player" frameborder="0" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <!-- Section 3 -->
+        <div class="section">
+            <h2>Interactive Pottery Visualization</h2>
+            <p>Explore this live Tableau visualization about ceramic art trends.</p>
+
+            <!-- Tableau Embed -->
+            <div class='tableauPlaceholder' id='viz1776200933477' style='position: relative'>
+    <noscript>
+        <a href='#'>
+            <img alt='Dashboard'
+                 src='https://public.tableau.com/static/images/Po/PotterySales2023/Dashboard/1_rss.png'
+                 style='border: none' />
+        </a>
+    </noscript>
+
+    <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='PotterySales2023/Dashboard' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+               value='https://public.tableau.com/static/images/Po/PotterySales2023/Dashboard/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1776200933477');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '1366px';
+    vizElement.style.height = '795px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Leah’s Pottery Page</p>
+    </footer>
+</body>
+</html>
